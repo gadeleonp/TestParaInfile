@@ -1,0 +1,31 @@
+﻿@model TestInfileGAdLP.Models.Usuario
+
+@{
+    ViewData["Title"] = "Perfil de Usuario";
+}
+
+<h2>Perfil de Usuario</h2>
+
+<div>
+    <label><strong>Nombre:</strong></label>
+    <span>@Model.Nombre</span>
+</div>
+<div>
+    <label><strong>Email:</strong></label>
+    <span>@Model.Email</span>
+</div>
+
+<hr />
+
+<h3>Acciones</h3>
+<ul>
+    <li>
+        <a asp-controller="CV" asp-action="SubirCV">Subir CV</a>
+    </li>
+    <li>
+        <a asp-controller="CV" asp-action="VerCV">Ver CV</a>
+    </li>
+    <li>
+        <a asp-controller="Usuario" asp-action="ActualizarPerfil">Actualizar Información del Perfil</a> <!-- Este es un enlace potencial para actualizar perfil -->
+    </li>
+</ul>

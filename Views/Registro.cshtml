@@ -1,0 +1,26 @@
+﻿@model TestInfileGAdLP.Models.Usuario
+
+<h2>Registro</h2>
+<form asp-action="Registro" method="post">
+    <div>
+        <label for="nombre">Nombre</label>
+        <input asp-for="Nombre" />
+        <span asp-validation-for="Nombre"></span>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+    <div>
+        <label for="password">Contraseña</label>
+        <input asp-for="Password" type="password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label for="password_confirmation">Confirmar Contraseña</label>
+        <input asp-for="PasswordConfirmation" type="password" />
+        <span asp-validation-for="PasswordConfirmation"></span>
+    </div>
+    <button type="submit">Registrar</button>
+</form>
